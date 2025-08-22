@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pondok Pesantren Al Anwar 2 Sarang</title>
+
+  <!-- Tailwind CSS (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              50: '#eef2ff', 100: '#e0e7ff', 200: '#c7d2fe', 300: '#a5b4fc',
+              400: '#818cf8', 500: '#6366f1', 600: '#4f46e5', 700: '#4338ca',
+              800: '#3730a3', 900: '#312e81'
+            },
+          },
+          container: { center: true, padding: '1rem' },
+          fontFamily: {
+            display: ["Inter var", "ui-sans-serif", "system-ui"],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Icons & AOS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <!-- Tambah di <head> -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Tambah sebelum </body> -->
+  <script src="script.js"></script>
+
+
+  <meta name="description" content="Portal resmi Pondok Pesantren Al Anwar 2 Sarang: informasi, layanan, pendaftaran, dan kontak." />
+  <meta name="theme-color" content="#4f46e5" />
+  <style>html { scroll-behavior: smooth; }</style>
+</head>
+<body class="text-slate-800 antialiased">
+
+  <!-- ====== HEADER / NAVBAR ====== -->
+  <header class="fixed inset-x-0 top-0 z-50 bg-white/80 backdrop-blur border-b border-slate-200">
+    <div class="container max-w-7xl flex items-center justify-between py-3">
+      <a href="#" class="flex items-center gap-3">
+        <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-primary-600 text-white shadow-sm">
+          <i class="fa-solid fa-graduation-cap"></i>
+        </span>
+        <div class="leading-tight">
+          <h1 class="text-base font-semibold">Pondok Pesantren Al Anwar 2</h1>
+          <p class="text-xs text-slate-500">Sarang · Rembang</p>
+        </div>
+      </a>
+
+      <button id="menuBtn" class="lg:hidden inline-flex h-10 w-10 items-center justify-center rounded-xl border border-slate-300 text-slate-700">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <nav id="nav" class="hidden lg:block">
+        <ul class="flex flex-col lg:flex-row lg:items-center gap-2 lg:gap-6">
+          <li><a href="#about" class="block rounded-lg px-3 py-2 hover:text-primary-700 hover:bg-primary-50">Tentang</a></li>
+          <li><a href="#informasi" class="block rounded-lg px-3 py-2 hover:text-primary-700 hover:bg-primary-50">Layanan</a></li>
+          <li><a href="#register" class="block rounded-lg px-3 py-2 hover:text-primary-700 hover:bg-primary-50">Pendaftaran</a></li>
+          <li><a href="#contact" class="block rounded-lg px-3 py-2 hover:text-primary-700 hover:bg-primary-50">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobileNav" class="lg:hidden hidden border-t border-slate-200 bg-white">
+      <div class="container max-w-7xl py-2">
+        <a href="#about" class="block px-3 py-2 rounded-lg hover:bg-primary-50">Tentang</a>
+        <a href="#informasi" class="block px-3 py-2 rounded-lg hover:bg-primary-50">Layanan</a>
+        <a href="#register" class="block px-3 py-2 rounded-lg hover:bg-primary-50">Pendaftaran</a>
+        <a href="#contact" class="block px-3 py-2 rounded-lg hover:bg-primary-50">Kontak</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="pt-20 lg:pt-24">
+
+<!-- SwiperJS CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+<!-- ===== HERO ===== -->
+<section class="relative min-h-[70vh] grid place-items-center overflow-hidden hero">
+  <!-- Background image -->
+  <div class="absolute inset-0 bg-[url('images/foto1.png')] bg-cover bg-center"></div>
+    <div class="absolute inset-0 bg-[url('images/foto2.png')] bg-cover bg-center"></div>
+  <!-- Overlay gradasi -->
+  <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/20"></div>
+
+  <!-- Konten -->
+  <div class="relative z-10 container max-w-7xl">
+    <div class="max-w-2xl text-white" data-aos="fade-right">
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold">Selamat Datang</h2>
+      <p class="mt-4 text-lg text-slate-100">
+        Kami hadir untuk memberikan layanan yang mempermudah proses administrasi dan informasi terkait Pondok Pesantren Al-Anwar 2.
+      </p>
+      <div class="mt-6">
+        <a href="#about" class="inline-flex items-center gap-2 rounded-xl bg-blue-600 px-5 py-3 text-white shadow-lg hover:bg-blue-700">
+          <span>Kunjungi</span><i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Wave transition -->
+  <svg class="absolute -bottom-px left-0 w-full" viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+    <path d="M0,64L48,69.3C96,75,192,85,288,80C384,75,480,53,576,53.3C672,53,768,75,864,85.3C960,96,1056,96,1152,80C1248,64,1344,32,1392,16L1440,0L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z" fill="white"/>
+  </svg>
+</section>
+
+
+    <!-- ====== ABOUT ====== -->
+    <section id="about" class="py-16 lg:py-24 bg-white" data-aos="fade-up">
+      <div class="container max-w-5xl">
+        <h3 class="text-3xl font-bold text-slate-900">Tentang Kami</h3>
+        <p class="mt-4 text-slate-600">Pondok Pesantren Al Anwar 2 Sarang berdedikasi dalam mendidik santri dengan ilmu agama, kitab kuning, serta pembekalan akhlak mulia.</p>
+      </div>
+    </section>
+
+    <!-- ====== INFORMASI ====== -->
+    <section id="informasi" class="py-16 lg:py-24 bg-slate-50">
+      <div class="container max-w-7xl">
+        <h3 class="text-center text-3xl font-bold" data-aos="fade-up">YAYASAN PONDOK PESANTREN AL ANWAR 2</h3>
+
+        <div class="mt-10 grid gap-8">
+
+          <!-- Card Pondok -->
+          <div class="grid lg:grid-cols-2 gap-8 items-center rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200" data-aos="fade-up">
+            <div>
+              <h4 class="text-xl font-semibold">Pondok Pesantren Al Anwar 2</h4>
+              <p class="mt-3 text-slate-600">Didirikan oleh KH. Maimoen Zubair pada 30 Juli 2006 / 6 Rajab 1427 H dan diresmikan pada 7 Maret 2009 oleh Prof. Dr. Ir. H. Muhammad Nuh, DEA.</p>
+              <p class="mt-2 text-slate-600">Awalnya bagian dari Lembaga Al Anwar 01 yang diasuh KH. Maimoen Zubair.</p>
+              <a href="pondok.html" class="mt-4 inline-flex items-center gap-2 rounded-xl bg-slate-900 px-4 py-2 text-white hover:bg-slate-800">Selengkapnya <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div>
+              <div class="aspect-video rounded-xl overflow-hidden ring-1 ring-slate-200">
+                <iframe class="h-full w-full" src="https://www.youtube.com/embed/f-I0PmRt0yM" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card MTs -->
+          <div class="grid lg:grid-cols-2 gap-8 items-center rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200" data-aos="fade-up">
+            <div>
+              <h4 class="text-xl font-semibold">MTs Al Anwar Sarang</h4>
+              <p class="mt-3 text-slate-600">Hutan jati yang memenuhi Desa Kalipang kini telah disulap menjadi Gedung MTs Al Anwar sejak 2003 atas inisiatif KH. Maimoen Zubair.</p>
+              <a href="#" class="mt-4 inline-flex items-center gap-2 rounded-xl bg-slate-900 px-4 py-2 text-white hover:bg-slate-800">Selengkapnya <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div>
+              <div class="aspect-video rounded-xl overflow-hidden ring-1 ring-slate-200">
+                <iframe class="h-full w-full" src="https://www.youtube.com/embed/f-I0PmRt0yM" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card SMP -->
+          <div class="grid lg:grid-cols-2 gap-8 items-center rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200" data-aos="fade-up">
+            <div>
+              <h4 class="text-xl font-semibold">SMP Al Anwar Sarang</h4>
+              <p class="mt-3 text-slate-600">SMP Al Anwar berlokasi di sebelah selatannya Pondok Pesantren Al Anwar 02 Dukuh Gondanrono, Desa Kalipang.</p>
+              <a href="#" class="mt-4 inline-flex items-center gap-2 rounded-xl bg-slate-900 px-4 py-2 text-white hover:bg-slate-800">Selengkapnya <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div>
+              <div class="aspect-video rounded-xl overflow-hidden ring-1 ring-slate-200">
+                <iframe class="h-full w-full" src="https://www.youtube.com/embed/f-I0PmRt0yM" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== REGISTER ====== -->
+    <section id="register" class="py-16 lg:py-24 bg-white">
+      <div class="container max-w-7xl">
+        <div class="text-center" data-aos="fade-up">
+          <h3 class="text-3xl font-bold">Pendaftaran Santri Baru</h3>
+          <p class="mt-2 text-slate-600">Al Anwar 02 Sarang Rembang</p>
+        </div>
+
+        <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="rounded-2xl border p-5 shadow-sm hover:shadow-md" data-aos="zoom-in">
+            <img src="images/foto1.png" class="h-20 w-20" />
+            <h5 class="mt-4 text-lg font-semibold">MA Al Anwar</h5>
+            <p class="text-sm text-slate-600">Pendaftaran santri baru MA Al Anwar</p>
+            <a href="ma.html" class="mt-4 inline-flex rounded-xl bg-emerald-600 px-4 py-2 text-white hover:bg-emerald-700">Kunjungi Situs</a>
+          </div>
+          <div class="rounded-2xl border p-5 shadow-sm hover:shadow-md" data-aos="zoom-in" data-aos-delay="100">
+            <img src="images/foto1.png" class="h-20 w-20" />
+            <h5 class="mt-4 text-lg font-semibold">MTs Al Anwar</h5>
+            <p class="text-sm text-slate-600">Pendaftaran santri baru MTs Al Anwar</p>
+            <a href="mts.html" class="mt-4 inline-flex rounded-xl bg-primary-600 px-4 py-2 text-white hover:bg-primary-700">Kunjungi Situs</a>
+          </div>
+          <div class="rounded-2xl border p-5 shadow-sm hover:shadow-md" data-aos="zoom-in" data-aos-delay="200">
+            <img src="images/foto1.png" class="h-20 w-20" />
+            <h5 class="mt-4 text-lg font-semibold">SMP Islam Al Anwar</h5>
+            <p class="text-sm text-slate-600">Pendaftaran santri baru SMP Islam Al Anwar</p>
+            <a href="smp.html" class="mt-4 inline-flex rounded-xl bg-primary-600 px-4 py-2 text-white hover:bg-primary-700">Kunjungi Situs</a>
+          </div>
+          <div class="rounded-2xl border p-5 shadow-sm hover:shadow-md" data-aos="zoom-in" data-aos-delay="300">
+            <img src="images/foto1.png" class="h-20 w-20" />
+            <h5 class="mt-4 text-lg font-semibold">SMA Al Anwar</h5>
+            <p class="text-sm text-slate-600">Pendaftaran santri baru SMA Al Anwar</p>
+            <a href="sma.html" class="mt-4 inline-flex rounded-xl bg-primary-600 px-4 py-2 text-white hover:bg-primary-700">Kunjungi Situs</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== CONTACT ====== -->
+    <section id="contact" class="py-16 lg:py-24 bg-slate-50" data-aos="fade-up">
+      <div class="container max-w-5xl">
+        <h3 class="text-3xl font-bold">Kontak Kami</h3>
+        <p class="mt-2 text-slate-600">Hubungi kami untuk informasi lebih lanjut mengenai pendaftaran maupun kegiatan pesantren.</p>
+        <div class="mt-4 text-slate-700">
+          <p><i class="fa-solid fa-envelope mr-2"></i>Email: <a class="text-primary-700 hover:underline" href="mailto:info@alanwar2.ac.id">info@alanwar2.ac.id</a></p>
+          <p class="mt-1"><i class="fa-solid fa-phone mr-2"></i>Telp: (0295) 123456</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="border-t bg-white py-6">
+    <div class="container max-w-7xl text-center text-sm text-slate-600">
+      &copy; 2025 Pondok Pesantren Al Anwar 2 Sarang. Semua hak dilindungi.
+    </div>
+  </footer>
+
+  <!-- AOS & Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
+
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileNav = document.getElementById('mobileNav');
+
+    menuBtn?.addEventListener('click', () => {
+      mobileNav.classList.toggle('hidden');
+    });
+
+    mobileNav?.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      mobileNav.classList.add('hidden');
+    }));
+  </script>
+</body>
+</html>

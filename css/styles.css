@@ -1,0 +1,95 @@
+/* Global font */
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* ===== HERO SLIDER ===== */
+.hero-swiper {
+  position: relative;
+}
+
+.hero-swiper .swiper-slide {
+  position: relative;
+}
+
+.hero-swiper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Overlay hitam transparan */
+.hero-swiper .swiper-slide::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+/* Konten di atas overlay */
+.hero-swiper .swiper-slide > div {
+  position: relative;
+  z-index: 2;
+}
+
+/* Swiper pagination dots */
+.swiper-pagination-bullet {
+  background: rgb(3, 114, 55) !important;
+  opacity: 0.6;
+}
+.swiper-pagination-bullet-active {
+  background: #2563eb !important; /* warna biru Tailwind */
+  opacity: 1;
+}
+
+/* ===== INFO CARD ===== */
+.info-card iframe {
+  width: 100%;
+  height: 250px;
+  border-radius: 0.75rem;
+}
+
+/* Card hover */
+.card {
+  transition: all 0.3s ease-in-out;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* ===== CUSTOM BUTTONS ===== */
+.btn-success {
+  background-color: #16a34a; /* green-600 */
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: background 0.2s ease-in-out;
+}
+.btn-success:hover {
+  background-color: #15803d; /* green-700 */
+}
+
+.btn-primary {
+  background-color: #2563eb; /* blue-600 */
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: background 0.2s ease-in-out;
+}
+.btn-primary:hover {
+  background-color: #1d4ed8; /* blue-700 */
+}
+
+.hero-swiper .swiper-slide::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* overlay gelap */
+  z-index: 10; /* overlay di bawah teks */
+}
+
+.hero-swiper .swiper-slide > div {
+  position: relative;
+  z-index: 20; /* teks di atas overlay */
+}
