@@ -39,4 +39,29 @@ Website ini dibuat sebagai platform **front-end** untuk SMP Islam Al Bisyri, men
 ---
 
 ##  Struktur Direktori
+/ (root directory)
+├── index.html
+├── smp.html
+├── smk.html
+├── tk.html
+├── styles.css
+├── js/
+│ └── (opsional file JS)
+└── images/
+├── logosmp.png
+├── logoarab.png
+├── logopondok.png
+└── (gambar lainnya)
+
+
+*(Sesuaikan dengan struktur riil proyekmu)*
+
+---
+
+##  Cara Jalankan (Run Locally)
+
+1. **Clone repository**  
+   ```bash
+   git clone https://github.com/FiiekGatarieekV1/Website-Pondok.git
+   cd Website-Pondok
 
